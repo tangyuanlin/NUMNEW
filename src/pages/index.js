@@ -20,7 +20,7 @@ const IndexPage = () => (
       <div className='bgc'></div>
 
      <h2 className="welcom">Welcome to NUM Design</h2>
-     <p className="huanyin">欢 迎 来 到a 楠 木 设 计</p>
+     <p className="huanyin">欢 迎 来 到 楠 木 设 计</p>
 
      <Link  to="page-2"><div className='cardapp'> app </div></Link>
         <Link to="page-2"> <div className='cardapp2'> app </div></Link>
