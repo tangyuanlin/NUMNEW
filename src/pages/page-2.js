@@ -14,12 +14,16 @@ const SecondPage = props  => (
       
     <h1 className="p2h1">Hi , from the Cat & moon</h1>
     <p className="p2p1">Welcome to page 2</p>
-    <Link> <button className="backhome" >Back Home</button></Link>
-  
+   
+    <div>
+      
+      <Img className="Img2" fluid={props.data.catImage.childImageSharp.fluid} /> 
+      <Link> <button className="backhome" >Back Home</button></Link>
+      
+    </div>
+
 
     
-   
-    <Img className="Img2" fluid={props.data.catImage.childImageSharp.fluid} /> 
 
 
   </Layout>
