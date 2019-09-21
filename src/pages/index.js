@@ -9,10 +9,6 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <div className="bg">
     <Layout> 
-    
-
-        {/* < Image></Image> */}
-        {/* <Link to="./404.js"></Link> */}
 
 
       <div className="bigbgc"> </div>
@@ -22,7 +18,7 @@ const IndexPage = () => (
      <h2 className="welcom">Welcome to NUM Design</h2>
      <p className="huanyin">欢 迎 来 到 楠 木 设 计</p>
 
-     <Link  to="page-2"><div className='cardapp'> app </div></Link>
+       <Link  to="page-2"><div className='cardapp'> app </div></Link>
         <Link to="page-2"> <div className='cardapp2'> app </div></Link>
       
        <div className='cardapp3'> app </div>         

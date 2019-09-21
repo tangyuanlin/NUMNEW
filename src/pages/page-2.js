@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link,graphql} from "gatsby"
 import Image from "../components/image"
 import Img from "gatsby-image"
-import {graphql} from "gatsby"
 import "../style/SecondPage.css"
 
 import Layout from "../components/layout"
@@ -14,11 +13,16 @@ const SecondPage = props  => (
     <SEO title="Page two" />
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
-        {/* <Image ></Image> */}
+   
+    <div className="pic12">
+      <Link><Img className="Img1" fluid={props.data.placeholderImage.childImageSharp.fluid} /></Link>
 
-    <Img fluid={props.data.placeholderImage.childImageSharp.fluid} />
-    <Img fluid={props.data.imgFive.childImageSharp.fluid} />
+      <Img className="Img2" fluid={props.data.imgFive.childImageSharp.fluid} />
      
+      </div>
+       
+
+ 
     <Link to="/"> <button>Go back to the homepage</button>  </Link>
   </Layout>
   </div>
@@ -32,7 +36,7 @@ export const pageQuery = graphql`
   query {
     imgFive: file(relativePath: { eq: "gatsby-astronaut.png" }) {
       childImageSharp {
-        fluid(maxWidth: 300) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -41,7 +45,7 @@ export const pageQuery = graphql`
 
     placeholderImage: file(relativePath: { eq: "IMG6782.JPG" }) {
       childImageSharp {
-        fluid(maxWidth: 300) {
+        fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid
         }
       }
