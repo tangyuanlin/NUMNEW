@@ -40,6 +40,7 @@ h1{
     color: rgb(253, 253, 253);
     transform: translateY(-5px) scale(1.09);
     box-shadow: #fff 5px; 
+    background-color: rgba(27, 27, 27, 0.781);
 }
 
 
