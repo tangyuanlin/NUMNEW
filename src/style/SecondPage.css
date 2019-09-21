@@ -5,6 +5,34 @@ h1{
    position: absolute;
 }
 
+.backhome{
+ cursor:pointer;
+ width: 120px;
+ height: 40px;
+ position: fixed;
+ top:90%;
+ left: 4%;
+ z-index: 100;
+ color: aliceblue;
+ font-size: 16px;
+ text-align: center;
+ border-radius: 20px;
+ background-color: rgba(0, 0, 0, 0.781);
+ border-color: rgba(255, 255, 255, 0.575);
+ border: 2px solid rgba(255, 255, 255, 0.726);
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+ transition:1s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+}
+
+.backhome:hover{
+    color: rgb(253, 253, 253);
+    transform: translateY(-5px) scale(1.09);
+    box-shadow: #fff 5px; 
+}
+
+
 .p2p1{
     color: #000;
     padding-left: 3%;
@@ -14,9 +42,9 @@ h1{
 }
 
 .scbg{
-    background-size:contain;
+
     background-color: rgb(255, 255, 255);
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 2100px;
 }
@@ -33,3 +61,20 @@ h1{
     margin: 0 auto;
     top: 240px;
 }
+
+
+
+
+  
+  
+@keyframes HeroAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+  }
+  

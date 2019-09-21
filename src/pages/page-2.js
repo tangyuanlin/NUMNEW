@@ -11,25 +11,17 @@ const SecondPage = props  => (
   <div className="scbg">
   <Layout>
     <SEO title="Page two" />
+      
     <h1 className="p2h1">Hi , from the Cat & moon</h1>
     <p className="p2p1">Welcome to page 2</p>
-   
-    <Img className="Img2" fluid={props.data.catImage.childImageSharp.fluid} /> 
-    <Link></Link>
+    <Link> <button className="backhome" >Back Home</button></Link>
+  
+
     
    
-    <div className="pic12">
+    <Img className="Img2" fluid={props.data.catImage.childImageSharp.fluid} /> 
 
-      {/* <Img fluid={props.data.catImage.childImageSharp.fluid} /> */}
 
-      {/* <Link><Img className="Img1" fluid={props.data.placeholderImage.childImageSharp.fluid} /></Link> */}
-
-      
-      </div>
-       
-
- 
-    <Link to="/"> <button>Go back to the homepage</button>  </Link>
   </Layout>
   </div>
 )

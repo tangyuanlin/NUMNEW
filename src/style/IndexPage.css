@@ -68,17 +68,19 @@ html {
     width: 48.5%;
     height: 450px;
     color: rgb(248, 248, 248);
-    background: url('../pages/pic/catlite.png') no-repeat;
+    /* background: url('../pages/pic/catlite.png') no-repeat; */
     background-size:100% auto ;
     background-color: rgb(77, 77, 77);
     /* border-radius:1ex; */
     position: absolute;
     /* margin: 0px -200px; */
     text-align: center;
-    line-height: 150px;
+    
     /* animation: HeroAnimation; */
     transition:1s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+
+
   
   .cardapp:hover{
     color: black;
@@ -141,7 +143,8 @@ html {
     /* animation: HeroAnimation; */
     transition:1s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-  
+
+
   
   #svg1{
     position: absolute;
