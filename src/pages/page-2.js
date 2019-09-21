@@ -11,14 +11,20 @@ const SecondPage = props  => (
   <div className="scbg">
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <h1 className="p2h1">Hi , from the Cat & moon</h1>
+    <p className="p2p1">Welcome to page 2</p>
+   
+    <Img className="Img2" fluid={props.data.catImage.childImageSharp.fluid} /> 
+    <Link></Link>
+    
    
     <div className="pic12">
-      <Link><Img className="Img1" fluid={props.data.placeholderImage.childImageSharp.fluid} /></Link>
 
-      <Img className="Img2" fluid={props.data.imgFive.childImageSharp.fluid} />
-     
+      {/* <Img fluid={props.data.catImage.childImageSharp.fluid} /> */}
+
+      {/* <Link><Img className="Img1" fluid={props.data.placeholderImage.childImageSharp.fluid} /></Link> */}
+
+      
       </div>
        
 
@@ -34,6 +40,16 @@ export default SecondPage;
 
 export const pageQuery = graphql`
   query {
+
+    catImage: file(relativePath: { eq: "catImage.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+
     imgFive: file(relativePath: { eq: "gatsby-astronaut.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
@@ -50,6 +66,8 @@ export const pageQuery = graphql`
         }
       }
     }
+
+
 
   }
 `;

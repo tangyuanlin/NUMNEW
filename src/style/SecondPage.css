@@ -1,11 +1,21 @@
 h1{
- z-index: 10;
+   padding-top: 100px;
+   padding-left: 3%;
+   color: rgb(0, 0, 0);
+   position: absolute;
 }
 
+.p2p1{
+    color: #000;
+    padding-left: 3%;
+    position: absolute;
+    padding-top: 150px;
+    font-size: 18px;
+}
 
 .scbg{
     background-size:contain;
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(255, 255, 255);
     position: relative;
     width: 100%;
     height: 2100px;
@@ -16,17 +26,10 @@ h1{
     z-index: 1;
 }
 
-
-.Img1{
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    /* top: -10px; */
-    z-index: 1;
-}
-
 .Img2{
-    /* width: 600px; */
+    width: 94%;
     position: relative;
     z-index: 1;
+    margin: 0 auto;
+    top: 240px;
 }
