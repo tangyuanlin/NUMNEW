@@ -25,7 +25,12 @@ const IndexPage = props => (
          </div>
        </Link>
 
-      
+       <Link  to="page-3">
+         <div className='cardapp2'> 
+           <Img className="P1img2" fluid={props.data.NUUUMImage.childImageSharp.fluid} /> 
+         </div>
+       </Link>
+
         {/* <Link to="page-2"> <div className='cardapp2'> app </div></Link>
       
        <div className='cardapp3'> app </div>         
@@ -51,6 +56,18 @@ export const pageQuery = graphql`
         }
       }
     }
+
+
+    NUUUMImage: file(relativePath: { eq: "NUUUM.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+
+
   }
 `;
 
