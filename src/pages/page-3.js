@@ -13,7 +13,7 @@ const ThreePage = props  => (
   <Layout>
     <SEO title="Page two" />
       
-    <h1 className="p2h1">Hi , from the Cat & moon</h1>
+    <h1 className="p2h1">Hi , from the Cat & moon1111</h1>
     <p className="p2p1">Welcome to page 2</p>
    
     <div>
