@@ -6,7 +6,7 @@ import "../style/SecondPage.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import NUUUMMP4 from "../images/DONG.mp4"
+import NUUUMMP4 from "../images/DONG.mp4"
 
 const ThreePage = props  => (
   <div className="scbg">
@@ -20,6 +20,12 @@ const ThreePage = props  => (
       
       
       {/* <video className="Img2" src={NUUUMMP4}  controls="controls" autoplay="play" loop="loop"></video> */}
+
+      <video controls>
+    <source src={NUUUMMP4} type="video/mp4" />
+  </video>
+
+
       {/* <Img className="Img2" fluid={props.data.catImage.childImageSharp.fluid} />  */}
       <Link> <button className="backhome" >Back Home</button></Link>
       
